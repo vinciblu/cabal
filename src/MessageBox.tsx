@@ -12,7 +12,7 @@ const AddressAvatar = ({ address, size }: any) => {
 
 export const AddressLinkAndAvatar = ({ address }: any) => {
     
-    const link = `https://tonscan.org/address/${address.toFriendly()}`;
+    const link = `https://tonviewer.com/${address.toFriendly()}`;
     return (<div className="message-address">
         <a href={link}>
             <AddressAvatar size={32} address={address.toFriendly()} />

@@ -7,7 +7,7 @@ const SWAP_TON_JETTON =
     "te6cckEBAgEAvwAB34gBxw5akQfJaXlBLYO7rsolHBjY6Ik5Q1Lb9shmS/UwX+QHWFrwTABHCdMlIIRLpZbyRs1h5v/mhUOS+cAq3kR2vT+jhNDvpZxGuQcPveMm5XyHFlZXc/f+8tiIXn13NISwOU1NGLsa8z7QAAAMgBwBAJRiAG01gF4g3YBE6C155WD4bBwzVaPiwwux6+ELuGVQS1OdIh+YKAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAABQ7msoAXjF4cRtdX05xc=";
 
 const SWAP_JETTON_TON_AND_REVERT =
-    "te6cckECAwEAAQ8AAd+IAccOWpEHyWl5QS2Du67KJRwY2OiJOUNS2/bIZkv1MF/kBnRSZfWv+62Sayl1lgAMMqDMLT+mekwqIHxlXL1jW+mEkMkaTI0BkS2vX2IAA0Q+FgbTyW2zvLm4Up/kjpBNEFlNTRi7GihegAAADFgcAQFoYgAsINhSTiB00s++1QqrBeb4d1/4USV8aWHz2lw8jgvH06BCwdgAAAAAAAAAAAAAAAAAAQIAxQ+KfqUAAAAAAAAAAWWvMQekAAgBJRzl59Y42NrFTK/xPHgN0bvOu3ZL1501dw55CQFGsuMAOOHLUiD5LS8oJbB3ddlEo4MbHREnKGpbftkMyX6mC/yICrqVAAAAABhBfqjMWOUNPJw=";
+    "te6ccgECCgEAArUAAvmIAbpSz41LTTHWPeUMhJoaV6CTQ4Yl2SqspZjcXVCxm0TaBVb9B9BBS9GkSD6/IGYCIWkdU8BXOo1Ne9F5nop7NkgX3rA6C+XAjRs/g6EKtFwIEKLPw4OxZdulq+CVh7zwyEAAAAE7NF3dqAAAQRgAAVpwtuTeCzRd3AAMDgEEAbNoAbpSz41LTTHWPeUMhJoaV6CTQ4Yl2SqspZjcXVCxm0TbADa4VOnTYlLvDJ0gZjNYm5PXfSmmtL6Vs6A/CZEtXCNIFM1PYDIABhAMXgAAVpwtuTeEzRd3AMACAXXqBhhdAAAAAAAAAABTMzD7cAgB3givFBxg1Z7hgOc4Nj2GWakCvoKlMMDD+B3bGNgSVLxzKDITybG4tAMAS2aLyYmAFEJ0lFcleV7i3npr2Sd5BkSHFknEw0vd8uVO4PO63GdhArVCAFEJ0lFcleV7i3npr2Sd5BkSHFknEw0vd8uVO4PO63GdoC+vCAAAAAAAAAAAAAAAAAACMAAAAe4AUwuAo/dBcF2VlwtMYB15Fbau80xnBRP+X4n69I6CyklABQYIQgJ5IKfXNZPQthJ9BEgcrNv4eWzfNmCV2z9v1rBw8nrY+wGbAAAAACmpoxf01ezxKopbsOCk1SUdC7ErhSmoZCOpvjy8Kyc4ICKiLYAbpSz41LTTHWPeUMhJoaV6CTQ4Yl2SqspZjcXVCxm0TaAAAAA8BwGPgAfICxdFBnBZ31EDHVOW7uVNuqtGCyxw2OnHDGIuuFcO0AN0pZ8alppjrHvKGQk0NK9BJocMS7JVWUsxuLqhYzaJtII8NGAYCAFP46DUgoAd4IrxQcYNWe4YDnODY9hlmpAr6CpTDAw/gd2xjYElS8EBQAkAS2aLyYmAG6Us+NS00x1j3lDISaGlegk0OGJdkqrKWY3F1QsZtE2h";
 
 const SWAP_JETTON_TON =
     "te6cckECAwEAAQ4AAd+IAccOWpEHyWl5QS2Du67KJRwY2OiJOUNS2/bIZkv1MF/kAVaAjUug6ljUj5/qxmljCCqrJUnSxUiqlYkWDZZTvrRV1zwGUY8jWlkrGZDDO4/IKrMKt7cGLOGGpUG+vmfMqGFNTRi7GwUFCAAADNgcAQFoYgBeMcWFnmxCkcI0rBSUypr7zwNUePBnjIBseA8tnB1YEKBCwdgAAAAAAAAAAAAAAAAAAQIAww+KfqUAAAAAAAAAAVAdN347aAAS3pX3JJG8lvOUpFhNdCk5L+8hSBCFyDo1FJg1U63imQA44ctSIPktLyglsHd12USjgxsdEScoalt+2QzJfqYL/IgKupUAAAAAGEOvOjBI49Fy/w==";
@@ -54,7 +54,7 @@ export const BocExample = ( props: {parseBoc: Function, setName: Function}) => {
             <div onClick={onclick.bind(null, SWAP_JETTON_TON, 'Swap ton')} className={"tag boc-button "   + classSelected(SWAP_JETTON_TON) }>Swap Jetton to Ton</div>
             <div onClick={onclick.bind(null, SWAP_TON_JETTON, 'Swap Jetton')} className={"tag boc-button " + classSelected(SWAP_TON_JETTON) }>Swap Ton to Jetton</div>
             <div onClick={onclick.bind(null, SWAP_JETTON_TON_AND_REVERT, 'Swap Jetton')} className={"tag boc-button " + classSelected(SWAP_JETTON_TON_AND_REVERT) }>Swap Jetton And Revert</div>
-            {/* <div onClick={onclick.bind(null, SCALETON, 'SCALETON')} className={"tag boc-button " + classSelected(SCALETON) }>ScaleTon</div> */}
+            <div onClick={onclick.bind(null, SCALETON, 'Swap Jetton')} className={"tag boc-button " + classSelected(SCALETON) }>Scale</div>
             <div onClick={onclick.bind(null, STONE, 'StonFi')} className={"tag boc-button " + classSelected(STONE)}>Ston.fi</div>
         </div>   )
 }

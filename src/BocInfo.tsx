@@ -109,13 +109,13 @@ export const BocInfo = (props: {boc: boc, bocName:string, onClear: any, estimate
             <div>
                 <div className='mini-title'>Source Wallet: </div>
                 <div ><AddressAvatar address={boc.wallet} size={32} />
-                    <a className='addr' target={"_blank"} href={`http://tonscan.org/address/${boc.wallet}`}>{boc.wallet}</a>
+                    <a className='addr' target={"_blank"} href={`http://tonviewer.com/${boc.wallet}`}>{boc.wallet}</a>
                 </div>
             </div>
             <div>
                 <div className='mini-title'>Destination Address: </div>
                 <div ><AddressAvatar address={boc.destination} size={32} />
-                    <a className='addr'  target={"_blank"} href={`http://tonscan.org/address/${boc.destination}`}>{boc.destination}</a>
+                    <a className='addr'  target={"_blank"} href={`http://tonviewer.com/${boc.destination}`}>{boc.destination}</a>
                 </div>
                 
             </div>
