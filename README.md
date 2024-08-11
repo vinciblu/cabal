@@ -1,1 +1,1 @@
-asdf
+okay so this is forked from https://github.com/ton-defi-org/boc-parser-estimator/tree/main to fetch from the mempool and parse it automatically. most of the transactions that it fetchs are gram submit proofs or throw an error but rarely you can catch a boc from a dex swap. My idea is to fetch multiple bocs from the mempool at once, parse them at the same time, detect which ones are a dex swap, and trigger a sandwich from there. 
